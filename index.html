@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrotrigger-santorcuato 2016 </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script src="knob/dist/jquery.knob.min.js"></script>
+    <script src="buzz/dist/buzz.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style type="text/css">
+    div#zona {
+        border: 1px solid black;
+        float: left;
+        width: 25%;
+        height: 50%;
+        border: 0;
+        margin: 10px;
+        padding-bottom: 10px;
+        font-family: verdana, arial;
+        font-size: 14px;
+    }
+    
+    
+    .cl2 {
+        padding: 0px 5px;
+    }
+    
+    @media (max-width: 600px) {
+        div#zona {
+            width: 100%;
+            margin: 0 auto;
+        }
+        hr {
+            margin-top: 0px;
+            margin-bottom: 14px;
+        }
+    }
+    
+    div#tip {
+        position: absolute;
+        width: 100px;
+        height: auto;
+    }
+    
+    body {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="hoverMe" id="zona"><img src="image/8082.png" class="img-responsive" /></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 cl1">
+                <h5>VOLUME</h5>
+                <input class="knob" id="tam" data-displayInput=false>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>1</h5>
+                <input type="image" id="boton1" src="image/botona.png" align="center" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>2</h5>
+                <input type="image" id="boton2" src="image/botonb.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>3</h5>
+                <input type="image" id="boton3" src="image/botonc.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>4</h5>
+                <input type="image" id="boton4" src="image/boton.png" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>5</h5>
+                <input type="image" id="boton5" src="image/botona.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>6</h5>
+                <input type="image" id="boton6" src="image/botonb.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>7</h5>
+                <input type="image" id="boton7" src="image/botonc.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>8</h5>
+                <input type="image" id="boton8" src="image/boton.png" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>9</h5>
+                <input type="image" id="boton9" src="image/botona.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>10</h5>
+                <input type="image" id="boton10" src="image/botonb.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>11</h5>
+                <input type="image" id="boton11" src="image/botonc.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>12</h5>
+                <input type="image" id="boton12" src="image/boton.png" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>13</h5>
+                <input type="image" id="boton13" src="image/botona.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>14</h5>
+                <input type="image" id="boton14" src="image/botonb.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>15</h5>
+                <input type="image" id="boton15" src="image/botonc.png" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 cl2 text-center">
+                <h5>16</h5>
+                <input type="image" id="boton16" src="image/boton.png" />
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    var misonido1 = new buzz.sound("808/808-Cowbell1.wav");
+    var misonido2 = new buzz.sound("808/808-Clave3.wav");
+    var misonido3 = new buzz.sound("808/808-Clap18.wav");
+    var misonido4 = new buzz.sound("808/808-Conga3.wav");
+
+    var misonido5 = new buzz.sound("808/808-Kicks03.wav");
+    var misonido6 = new buzz.sound("808/808-Snare15.wav");
+    var misonido7 = new buzz.sound("808/808-HiHats12.wav");
+    var misonido8 = new buzz.sound("808/808-Clave2.wav");
+
+
+    var misonido9 = new buzz.sound("808/808-Maracas1.wav");
+    var misonido10 = new buzz.sound("808/808-Ride1.wav");
+    var misonido11 = new buzz.sound("808/808-Rim1.wav");
+    var misonido12 = new buzz.sound("808/808-OpenHiHats06.wav");
+
+
+
+    var misonido13 = new buzz.sound("808/808-OpenHiHats09.wav");
+    var misonido14 = new buzz.sound("808/808-Tom2.wav");
+    var misonido15 = new buzz.sound("808/808-Ride4.wav");
+    var misonido16 = new buzz.sound("808/808-Stick1.wav")
+
+
+
+
+
+    var valora = 0;
+    var valorb = 0;
+    var valorc = 0;
+    var valord = 0;
+
+
+    $("#tam").knob({
+
+        'fgColor': 'white',
+        'bgColor': '#000',
+        'width': '60px',
+        'height': '60px',
+
+
+
+        change: function(valuea) {
+            //console.log("change : " + value);
+        },
+        release: function(valuea) {
+            //console.log(this.$.attr('value'));
+            //console.log("release : " + valuea);
+            valora = valuea;
+        },
+        cancel: function() {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw: function() {
+
+            // "tron" case
+            if (this.$.data('skin') == 'tron') {
+
+                this.cursorExt = 0.3;
+
+                var a = this.arc(this.cv) // Arc
+                    ,
+                    pa // Previous arc
+                    , r = 1;
+
+                this.g.lineWidth = this.lineWidth;
+
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+
+                return false;
+            }
+        }
+    });
+
+    // Example of infinite knob, iPod click wheel
+    var v, up = 0,
+        down = 0,
+        i = 0,
+        $idir = $("div.idir"),
+        $ival = $("div.ival"),
+        incr = function() {
+            i++;
+            $idir.show().html("+").fadeOut();
+            $ival.html(i);
+        },
+        decr = function() {
+            i--;
+            $idir.show().html("-").fadeOut();
+            $ival.html(i);
+        };
+    $("input.infinite").knob({
+        min: 0,
+        max: 20,
+        stopper: false,
+        change: function() {
+            if (v > this.cv) {
+                if (up) {
+                    decr();
+                    up = 0;
+                } else {
+                    up = 1;
+                    down = 0;
+                }
+            } else {
+                if (v < this.cv) {
+                    if (down) {
+                        incr();
+                        down = 0;
+                    } else {
+                        down = 1;
+                        up = 0;
+                    }
+                }
+            }
+            v = this.cv;
+        }
+    });
+
+    $("#r").knob({
+
+        'fgColor': 'white',
+        'bgColor': '#000',
+        'width': '50px',
+        'height': '50px',
+
+
+        change: function(valueb) {
+            console.log("change : " + valueb);
+        },
+        release: function(valueb) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + valueb);
+            valorb = valueb;
+
+        },
+        cancel: function() {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw: function() {
+
+            // "tron" case
+            if (this.$.data('skin') == 'tron') {
+
+                this.cursorExt = 0.3;
+
+                var a = this.arc(this.cv) // Arc
+                    ,
+                    pa // Previous arc
+                    , r = 1;
+
+                this.g.lineWidth = this.lineWidth;
+
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+
+                return false;
+            }
+        }
+    });
+
+    // Example of infinite knob, iPod click wheel
+    var v, up = 0,
+        down = 0,
+        i = 0,
+        $idir = $("div.idir"),
+        $ival = $("div.ival"),
+        incr = function() {
+            i++;
+            $idir.show().html("+").fadeOut();
+            $ival.html(i);
+        },
+        decr = function() {
+            i--;
+            $idir.show().html("-").fadeOut();
+            $ival.html(i);
+        };
+    $("input.infinite").knob({
+        min: 0,
+        max: 20,
+        stopper: false,
+        change: function() {
+            if (v > this.cv) {
+                if (up) {
+                    decr();
+                    up = 0;
+                } else {
+                    up = 1;
+                    down = 0;
+                }
+            } else {
+                if (v < this.cv) {
+                    if (down) {
+                        incr();
+                        down = 0;
+                    } else {
+                        down = 1;
+                        up = 0;
+                    }
+                }
+            }
+            v = this.cv;
+        }
+    });
+
+
+    $("#g").knob({
+
+        'fgColor': 'white',
+        'bgColor': '#000',
+        'width': '50px',
+        'height': '50px',
+
+
+
+        change: function(valuec) {
+            //console.log("change : " + value);
+        },
+        release: function(valuec) {
+            //console.log(this.$.attr('value'));
+            //console.log("release : " + valuec);
+            valorc = valuec;
+        },
+        cancel: function() {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw: function() {
+
+            // "tron" case
+            if (this.$.data('skin') == 'tron') {
+
+                this.cursorExt = 0.3;
+
+                var a = this.arc(this.cv) // Arc
+                    ,
+                    pa // Previous arc
+                    , r = 1;
+
+                this.g.lineWidth = this.lineWidth;
+
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+
+                return false;
+            }
+        }
+    });
+
+    // Example of infinite knob, iPod click wheel
+    var v, up = 0,
+        down = 0,
+        i = 0,
+        $idir = $("div.idir"),
+        $ival = $("div.ival"),
+        incr = function() {
+            i++;
+            $idir.show().html("+").fadeOut();
+            $ival.html(i);
+        },
+        decr = function() {
+            i--;
+            $idir.show().html("-").fadeOut();
+            $ival.html(i);
+        };
+    $("input.infinite").knob({
+        min: 0,
+        max: 20,
+        stopper: false,
+        change: function() {
+            if (v > this.cv) {
+                if (up) {
+                    decr();
+                    up = 0;
+                } else {
+                    up = 1;
+                    down = 0;
+                }
+            } else {
+                if (v < this.cv) {
+                    if (down) {
+                        incr();
+                        down = 0;
+                    } else {
+                        down = 1;
+                        up = 0;
+                    }
+                }
+            }
+            v = this.cv;
+        }
+    });
+
+    $("#b").knob({
+
+        'fgColor': 'white',
+        'bgColor': '#000',
+        'width': '50px',
+        'height': '50px',
+
+
+
+        change: function(valued) {
+            //console.log("change : " + value);
+        },
+        release: function(valued) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + valued);
+            valord = valued;
+        },
+        cancel: function() {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw: function() {
+
+            // "tron" case
+            if (this.$.data('skin') == 'tron') {
+
+                this.cursorExt = 0.3;
+
+                var a = this.arc(this.cv) // Arc
+                    ,
+                    pa // Previous arc
+                    , r = 1;
+
+                this.g.lineWidth = this.lineWidth;
+
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+
+                return false;
+            }
+        }
+    });
+
+    // Example of infinite knob, iPod click wheel
+    var v, up = 0,
+        down = 0,
+        i = 0,
+        $idir = $("div.idir"),
+        $ival = $("div.ival"),
+        incr = function() {
+            i++;
+            $idir.show().html("+").fadeOut();
+            $ival.html(i);
+        },
+        decr = function() {
+            i--;
+            $idir.show().html("-").fadeOut();
+            $ival.html(i);
+        };
+    $("input.infinite").knob({
+        min: 0,
+        max: 20,
+        stopper: false,
+        change: function() {
+            if (v > this.cv) {
+                if (up) {
+                    decr();
+                    up = 0;
+                } else {
+                    up = 1;
+                    down = 0;
+                }
+            } else {
+                if (v < this.cv) {
+                    if (down) {
+                        incr();
+                        down = 0;
+                    } else {
+                        down = 1;
+                        up = 0;
+                    }
+                }
+            }
+            v = this.cv;
+        }
+    });
+
+    $(document).ready(function() {
+        incr = +1;
+
+        $('body').css({
+
+            'background-color': '#4B4B4B'
+
+        });
+
+
+        $('.hoverMe').hover(
+            function() {
+                $('#tip').fadeIn('slow');
+            },
+            function() {
+                $('#tip').fadeOut('slow');
+            });
+
+        $('.hoverMe').mousemove(function(e) {
+            var topPosition = e.pageY + 5;
+            var leftPosition = e.pageX + 5;
+
+
+
+
+        });
+
+        $("#boton1").click(function() {
+            //misonido1.autoplay(true);
+            misonido1.setVolume(valora);
+            misonido1.play();
+        });
+        $("#boton2").click(function() {
+            misonido2.setVolume(valora);
+            misonido2.play();
+        });
+        $("#boton3").click(function() {
+            misonido3.setVolume(valora);
+            misonido3.play();
+        });
+        $("#boton4").click(function() {
+            misonido4.setVolume(valora);
+            misonido4.play();
+        });
+        $("#boton5").click(function() {
+            misonido5.setVolume(valora);
+            misonido5.play();
+        });
+        $("#boton6").click(function() {
+            misonido6.setVolume(valora);
+            misonido6.play();
+        });
+        $("#boton7").click(function() {
+            misonido7.setVolume(valora);
+            misonido7.play();
+        });
+        $("#boton8").click(function() {
+
+            misonido8.setVolume(valora);
+            misonido8.play();
+        });
+        $("#boton9").click(function() {
+            misonido9.setVolume(valora);
+            misonido9.play();
+        });
+        $("#boton10").click(function() {
+            misonido10.setVolume(valora);
+            misonido10.play();
+        });
+        $("#boton11").click(function() {
+            misonido11.setVolume(valora);
+            misonido11.play();
+        });
+        $("#boton12").click(function() {
+            misonido12.setVolume(valora);
+            misonido12.play();
+        });
+        $("#boton13").click(function() {
+            misonido13.setVolume(valora);
+            misonido13.play();
+        });
+        $("#boton14").click(function() {
+            misonido14.setVolume(valora);
+            misonido14.play();
+        });
+        $("#boton15").click(function() {
+            misonido15.setVolume(valora);
+            misonido15.play();
+        });
+        $("#boton16").click(function() {
+            misonido16.setVolume(valora);
+            misonido16.play();
+        });
+
+        alert("To use adjust the volume knob/Para usar ajusta el portenciómetro de volumen.");
+
+
+    });
+    </script>
+</body>
+
+</html>
